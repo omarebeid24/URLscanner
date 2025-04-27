@@ -1,2 +1,2 @@
 Weka training models
-use newmodel4.model as this is the highest, most accurate and final model.
+Download newmodel4.model using the link:  https://mega.nz/file/FchwjYKR#6ArZQ5RtJ-DxyePQO_WCf6zvtrgaLfB3XIma5u1qGaM
