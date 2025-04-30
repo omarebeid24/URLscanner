@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #161625;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="553.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/download11.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="260.0" lineSpacing="1.0" maxWidth="1070.0" prefHeight="40.0" prefWidth="1061.0" style="-fx-background-color: #86aaf9;" text="URL SAFETY ANALYZER v2.1 USER GUIDE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1125.0" layoutY="8.0" onMouseClicked="#minimize" onMouseEntered="#hover" onMouseExited="#unhover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/download8.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="1170.0" layoutY="8.0" onMouseClicked="#close" onMouseEntered="#hover" onMouseExited="#unhover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/download7.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="menuOpener" prefHeight="800.0" spacing="10.0" style="-fx-background-color: #26334f;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0">
+               <VBox.margin>
+                  <Insets left="10.0" top="8.0" />
+               </VBox.margin>
+            </Text>
+            <HBox fx:id="checkURL" alignment="CENTER_LEFT" onMouseClicked="#CheckURL" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="35.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: #26334f;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../view/images/download4.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Check URL" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="aboutURL" alignment="CENTER_LEFT" onMouseClicked="#AboutPage" onMouseEntered="#hover" onMouseExited="#unhover" prefHeight="35.0" prefWidth="100.0" spacing="5.0" style="-fx-background-color: #161625;">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../view/images/download5.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="About " textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fx:id="menuButton" fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="8.0" onMouseClicked="#menu" onMouseEntered="#hover" onMouseExited="#unhover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../view/images/download6.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="780.0" prefHeight="20.0" prefWidth="100.0" text="VERSION 2.1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="119.0" layoutY="300.0" prefHeight="480.0" prefWidth="1061.0" style="-fx-control-inner-background: #161625; -fx-border-color: #86aaf9;" text="        URL Safety Analyzer combines four detection methods to accurately assess URL safety:&#10;&#10;            - Neural model trained on 500,000+ URLs to detect malicious patterns&#10;            - Checks certificate validity, authenticity, and encryption protocols&#10;            - Examines 13 structural features associated with phishing sites&#10;            - Pre-verified database of 50+ trusted domains&#10;            - URL is on our whitelist or passes all security checks&#10;            - URL has good security indicators&#10;            - Mixed results from different analysis methods&#10;            - URL has concerning characteristics&#10;            - URL is likely malicious and should be avoided&#10;&#10;&#10;&#10;        SSL errors are critical security indicators. When our tool reports an SSL error, It means the website has failed to properly implement secure communications.&#10;&#10;             This could indicate:&#10;                  - Expired or invalid certificates&#10;                  - Self-signed certificates not verified by trusted authorities&#10;                  - Misconfigured servers attempting to use HTTPS&#10;                  - Potential man-in-the-middle attack vulnerability&#10;&#10;             The system validates URLs before analysis to ensure they:&#10;                  - Have proper format and structure&#10;                  - Contain valid domain extensions (TLDs)&#10;                  - Exist in the DNS system (have a real domain&#10;" />
+   </children>
+</Pane>
