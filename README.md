@@ -2,7 +2,7 @@
 
 A Java desktop application for comprehensive URL security analysis using machine learning, SSL certificate verification, and URL structure analysis to detect phishing and malicious websites.
 
-![URLscanner]()
+![URLscanner](Images/appMainPage.png)
 
 ## Features
 
@@ -12,7 +12,7 @@ A Java desktop application for comprehensive URL security analysis using machine
 - **URL Structure Analysis**: Examines URL patterns for suspicious characteristics
 - **Detailed Technical Reports**: Provides comprehensive security assessment with metrics and recommendations
 - **Modern UI**: Clean, intuitive JavaFX interface with visual indicators and interactive elements
-
+![URLscanner](Images/phishingOutput.png)
 ## Architecture
 
 The application follows a layered architecture design:
